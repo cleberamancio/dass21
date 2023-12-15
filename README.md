@@ -36,7 +36,10 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 5. Execute o Docker Compose para iniciar o banco de dados:
    ```bash
    mvn spring-boot:run
-
+6. Após iniciar o servidor local, é possivel acessar um dos recursos da API com uma ferramenta de consulta, como Insomnia ou Postman, utilizando o vebo HTTP Get e o recurso abaixo:
+   ```bash
+   http://localhost:8080/api/pesquisa
+   
 Recursos da API
    - **Exibir pesquisa** - *Exibe a lista com as informações de todos os participantes.*
    - **Salvar resposta na pesquisa** - *Salva a resposta de um Participante na pesquisa.*
@@ -47,4 +50,5 @@ Recursos da API
 
 Documentação da plataforma
    ```bash
+   http://localhost:8080/swagger-ui/index.html
    http://[Seu Host]/swagger-ui/index.html
