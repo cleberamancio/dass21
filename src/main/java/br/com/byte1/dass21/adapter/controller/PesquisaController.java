@@ -31,7 +31,7 @@ public class PesquisaController {
     }
 
     @GetMapping("/pesquisa")
-    @Operation(summary = "Exiber pesquisa", description = "Exibe a lista com as informações de todos os participantes.")
+    @Operation(summary = "Exibir pesquisa", description = "Exibe a lista com as informações de todos os participantes.")
     @ApiResponse(responseCode = "200", description = "Lista todos os Participantes cadastrados e suas respostas na pesquisa.", content = @Content(mediaType = "application/json"))
     public ResponseEntity<Map> list(){
         var listarParticipantePontosEscalaUseCase = new ListarParticipantePontosEscalaUseCase(this.participanteRepository, this.respostaRepository);
@@ -40,7 +40,7 @@ public class PesquisaController {
     }
 
     @GetMapping("/pesquisa/{participante_id}")
-    @Operation(summary = "Exibe pesquisa de um participante em específico.", description = "Exibe as informações de um participante específico.")
+    @Operation(summary = "Exibe a pesquisa de um participante em específico.", description = "Exibe as informações de um participante específico.")
     @ApiResponse(responseCode = "200", description = "Lista todos os dados de um Participantes cadastrados e sua resposta na pesquisa.", content = @Content(mediaType = "application/json"))
     public ResponseEntity<Map<String, Map<String, Object>>> listById(@PathVariable("participante_id") int participante_id)
     {

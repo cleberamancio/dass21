@@ -53,7 +53,7 @@ Recursos da API
    - **Exibir pesquisa** - *Exibe a lista com as informações de todos os participantes.*
    - **Salvar resposta na pesquisa** - *Salva a resposta de um Participante na pesquisa.*
    - **Edição de Ordem de Serviço** - *Edite uma ordem de serviço existente.*
-   - **Exibe pesquisa de um participante em específico.**
+   - **Exibe a pesquisa de um participante em específico.**
    - **Edita um participante e sua resposta na pesquisa.**
    - **Criar novo Participante** - *Cria um novo participante na pesquisa.*
 
