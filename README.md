@@ -32,10 +32,19 @@ Certifique-se de ter as seguintes ferramentas instaladas:
    MYSQL_DATABASE=dass21_db
    MYSQL_USERNAME=root
    MYSQL_PASSWORD=Abcd1234@
+
+6. Crie uma pasta mysql na raiz do projeto, pois o Docker com o mysql utiliza como volume para armazenamento:
+   ```bash
+   mkdir mysql
    
-5. Execute o Docker Compose para iniciar o banco de dados:
+7. Execute o Docker Compose na raiz do projeto para iniciar o banco de dados:
+   ```bash
+   docker-compose up -d
+   
+8. Execute o Docker Compose para iniciar o banco de dados:
    ```bash
    mvn spring-boot:run
+
 6. Após iniciar o servidor local, é possivel acessar um dos recursos da API com uma ferramenta de consulta, como Insomnia ou Postman, utilizando o vebo HTTP Get e o recurso abaixo:
    ```bash
    http://localhost:8080/api/pesquisa
